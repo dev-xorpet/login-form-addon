@@ -1,144 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>ورود به سامانه دانشگاه</title>
 
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-
+  <body>
     <main class="login-page">
+      <section class="login-card">
+        <!-- Logo -->
+        <div class="university-logo">
+          <div class="logo-circle">
+            <img src="./images/images.png" alt="لوگو دانشگاه" />
+          </div>
 
-        <section class="login-card">
+          <h1>دانشگاه</h1>
+          <p>سامانه خدمات دانشجویی</p>
+        </div>
 
-            <!-- Logo -->
-            <div class="university-logo">
-                <div class="logo-circle">
-                    <img src="./images/images.png" alt="لوگو دانشگاه">
-                </div>
+        <!-- Login Form -->
+        <form id="loginForm">
+          <div class="form-title">
+            <h2>ورود به حساب کاربری</h2>
+            <p>برای ادامه وارد حساب خود شوید</p>
+          </div>
 
-                <h1>دانشگاه</h1>
-                <p>سامانه خدمات دانشجویی</p>
+          <!-- Student ID -->
+          <div class="input-group">
+            <label for="studentId"> شماره دانشجویی </label>
+
+            <div class="input-box">
+              <span class="input-icon">👤</span>
+
+              <input
+                type="text"
+                id="studentId"
+                placeholder="شماره دانشجویی خود را وارد کنید"
+                autocomplete="username"
+              />
             </div>
 
+            <small class="error-message" id="studentIdError"></small>
+          </div>
 
-            <!-- Login Form -->
-            <form id="loginForm">
+          <!-- Password -->
+          <div class="input-group">
+            <label for="password"> رمز عبور </label>
 
-                <div class="form-title">
-                    <h2>ورود به حساب کاربری</h2>
-                    <p>برای ادامه وارد حساب خود شوید</p>
-                </div>
+            <div class="input-box">
+              <span class="input-icon">🔒</span>
 
+              <input
+                type="password"
+                id="password"
+                placeholder="رمز عبور خود را وارد کنید"
+                autocomplete="current-password"
+              />
 
-                <!-- Student ID -->
-                <div class="input-group">
-
-                    <label for="studentId">
-                        شماره دانشجویی
-                    </label>
-
-                    <div class="input-box">
-                        <span class="input-icon">👤</span>
-
-                        <input
-                            type="text"
-                            id="studentId"
-                            placeholder="شماره دانشجویی خود را وارد کنید"
-                            autocomplete="username"
-                        >
-                    </div>
-
-                    <small class="error-message" id="studentIdError"></small>
-
-                </div>
-
-
-                <!-- Password -->
-                <div class="input-group">
-
-                    <label for="password">
-                        رمز عبور
-                    </label>
-
-                    <div class="input-box">
-
-                        <span class="input-icon">🔒</span>
-
-                        <input
-                            type="password"
-                            id="password"
-                            placeholder="رمز عبور خود را وارد کنید"
-                            autocomplete="current-password"
-                        >
-
-                        <button
-                            type="button"
-                            class="show-password"
-                            id="togglePassword"
-                            aria-label="نمایش رمز عبور"
-                        >
-                            👁
-                        </button>
-
-                    </div>
-
-                    <small class="error-message" id="passwordError"></small>
-
-                </div>
-
-
-                <!-- Options -->
-                <div class="form-options">
-
-                    <label class="remember">
-                        <input type="checkbox" id="remember">
-                        <span>مرا به خاطر بسپار</span>
-                    </label>
-
-                    <a href="#" class="forgot-password">
-                        فراموشی رمز عبور؟
-                    </a>
-
-                </div>
-
-
-                <!-- Login Button -->
-                <button type="submit" class="login-button" id="loginButton">
-
-                    <span id="buttonText">
-                        ورود به سامانه
-                    </span>
-
-                </button>
-
-
-                <!-- Message -->
-                <div id="formMessage" class="form-message"></div>
-
-            </form>
-
-
-            <!-- Footer -->
-            <div class="login-footer">
-
-                <p>
-                    ورود به سامانه به منزله پذیرش
-                    <a href="#">قوانین و مقررات</a>
-                    دانشگاه است.
-                </p>
-
+              <button
+                type="button"
+                class="show-password"
+                id="togglePassword"
+                aria-label="نمایش رمز عبور"
+              >
+                👁
+              </button>
             </div>
 
-        </section>
+            <small class="error-message" id="passwordError"></small>
+          </div>
 
+          <!-- Options -->
+          <div class="form-options">
+            <label class="remember">
+              <input type="checkbox" id="remember" />
+              <span>مرا به خاطر بسپار</span>
+            </label>
+
+            <a href="#" class="forgot-password"> فراموشی رمز عبور؟ </a>
+          </div>
+
+          <!-- Login Button -->
+          <button type="submit" class="login-button" id="loginButton">
+            <span id="buttonText"> ورود به سامانه </span>
+          </button>
+
+          <!-- Message -->
+          <div id="formMessage" class="form-message"></div>
+        </form>
+
+        <!-- Footer -->
+        <div class="login-footer">
+          <p>
+            ورود به سامانه به منزله پذیرش
+            <a href="#">قوانین و مقررات</a>
+            دانشگاه است.
+          </p>
+        </div>
+      </section>
     </main>
 
     <script src="./script.js"></script>
-
-</body>
+  </body>
 </html>
