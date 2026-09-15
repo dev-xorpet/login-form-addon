@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Vazirmatn", sans-serif;
+    min-height: 100vh;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(30, 91, 160, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(14, 165, 233, 0.10),
+            transparent 35%
+        ),
+        #f4f7fb;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf1;
+
+    border-radius: 22px;
+
+    padding: 42px 40px 28px;
+
+    box-shadow:
+        0 20px 50px rgba(20, 45, 80, 0.10);
+}
+
+
+/* =========================
+   UNIVERSITY LOGO
+========================= */
+
+.university-logo {
+    text-align: center;
+    margin-bottom: 35px;
+    
+}
+
+
+.logo-circle img {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 25px rgba(15, 61, 104, 0.20);
+}
+
+
+.university-logo h1 {
+    color: #0f3d68;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+
+.university-logo p {
+    color: #7b8798;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FORM TITLE
+========================= */
+
+.form-title {
+    margin-bottom: 25px;
+}
+
+
+.form-title h2 {
+    font-size: 20px;
+
+    color: #172033;
+
+    margin-bottom: 7px;
+}
+
+
+.form-title p {
+    color: #7b8798;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #344054;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box {
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    transition: 0.25s;
+}
+
+
+.input-box:focus-within {
+    border-color: #1976b9;
+
+    box-shadow:
+        0 0 0 4px rgba(25, 118, 185, 0.10);
+}
+
+
+.input-icon {
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 17px;
+
+    opacity: 0.7;
+}
+
+
+.input-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #172033;
+
+    background: transparent;
+}
+
+
+.input-box input::placeholder {
+    color: #a0a8b5;
+}
+
+
+.show-password {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+    opacity: 0.65;
+}
+
+
+.show-password:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-message {
+    display: block;
+
+    color: #dc3545;
+
+    font-size: 11px;
+
+    margin-top: 6px;
+
+    min-height: 16px;
+}
+
+
+/* =========================
+   FORM OPTIONS
+========================= */
+
+.form-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 25px;
+
+    font-size: 12px;
+}
+
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #667085;
+
+    cursor: pointer;
+}
+
+
+.remember input {
+    accent-color: #0f3d68;
+
+    cursor: pointer;
+}
+
+
+.forgot-password {
+    color: #146ca3;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #0f3d68;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.login-button:hover {
+    background: #0b3154;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(15, 61, 104, 0.20);
+}
+
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+
+.login-button.loading {
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.form-message {
+    text-align: center;
+
+    font-size: 12px;
+
+    margin-top: 15px;
+
+    min-height: 18px;
+}
+
+
+.form-message.success {
+    color: #198754;
+}
+
+
+.form-message.error {
+    color: #dc3545;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.login-footer {
+    border-top: 1px solid #edf0f4;
+
+    margin-top: 28px;
+
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+
+.login-footer p {
+    color: #98a2b3;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+
+.login-footer a {
+    color: #146ca3;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+    .login-page {
+        padding: 15px;
+    }
+
+    .login-card {
+        padding: 32px 22px 24px;
+
+        border-radius: 18px;
+    }
+
+    .form-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}
